@@ -7,11 +7,11 @@
 
 <style>
     :global(body){
-        background-color:navy;
+        background-image:url("images/homeBg.png");
     }
     a{
         text-decoration:none;
-        margin-top:25px;
+        margin-top:50px;
         display:flex;
         justify-content:center;
     }
@@ -24,7 +24,9 @@
         padding: 10px 5px;
     }
     h1{
+        font-size:50px;
         text-align:center;
-        margin-top:35vh;
+        margin-top:42vh;
+        color:white;
     }
 </style>
