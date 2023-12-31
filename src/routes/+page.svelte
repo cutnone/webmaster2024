@@ -7,6 +7,7 @@
 
 <style>
     :global(body){
+        @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
         background-image:url("images/homeBg.png");
     }
     a{
@@ -28,5 +29,6 @@
         text-align:center;
         margin-top:42vh;
         color:white;
+        font-family: 'Inter', sans-serif;
     }
 </style>
