@@ -12,10 +12,6 @@
 
 
 <style>
-    :global(body){
-        @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
-        background-image:url("images/homeBg.png");
-    }
     a{
         text-decoration:none;
         margin-top:50px;
