@@ -10,28 +10,7 @@
 
     let t = 0;
     let rt = 0;
-    function update(ct: number) {
-        const vals = [0, 0, 0, 0, 0];
-        for (let i = 0; i < 5; i++) {
-            let iAdd = Math.PI*2/5*i;
-            vals[i] = (Math.sin(t+iAdd)*.5 + 2);
-        }
-        const valsStr = vals.map(v=>v+"")
-        img1.style.flexGrow = valsStr[0];
-        img2.style.flexGrow = valsStr[1];
-        img3.style.flexGrow = valsStr[2];
-        img4.style.flexGrow = valsStr[3];
-        img5.style.flexGrow = valsStr[4];
 
-
-        t+=0.0001*(ct-rt)
-        rt = ct;
-        requestAnimationFrame(update)
-    }
-
-    onMount(()=>{
-        update(0);
-    })
 
 </script>
 
