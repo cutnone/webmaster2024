@@ -4,11 +4,13 @@
 </script>
 <FancyBackground/>
 
-<h1>Power Your Home Through Sustainable Energy</h1>
-
-<a href="#">
-    <button>Learn More</button>
-</a>
+<main>
+    <h1>Power Your Home Through Sustainable Energy</h1>
+    
+    <a href="#">
+        <button>Learn More</button>
+    </a>
+</main>
 
 
 <style>
@@ -26,8 +28,10 @@
         background-color:rgba(255,255,255,0.25);
         padding: 15px 30px;
         backdrop-filter: blur(5px);
+        box-shadow: 0 0 10px raba(0 0 0 50%);
     }
     h1{
+        text-shadow: 0 0 10px raba(0 0 0 50%);
         font-size:50px;
         text-align:center;
         margin-top:42vh;
