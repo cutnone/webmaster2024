@@ -103,16 +103,19 @@
         
         flex-direction: column;
         align-items: center;
+        justify-content:center;
     }
     p{
         width:500px;
     }
     section{
         background-image: url("images/hydropower.png");
+        width:100vw;
         height: 100vh;
         display:flex;
         flex-direction:column;
         justify-content:center;
+        align-items:center;
         /* background-image: url("images/hydropower.png"); */
     }
 
