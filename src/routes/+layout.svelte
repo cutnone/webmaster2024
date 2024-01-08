@@ -1,4 +1,6 @@
 <script lang="ts">
+	import { fly, slide } from "svelte/transition";
+
     let showing = false;
     let navWidth = 0;
     let main: HTMLDivElement
@@ -28,16 +30,26 @@
 
 <div class="contain" bind:this={main} class:open={showing}>
     <nav bind:this={nav} bind:offsetWidth={navWidth}>
-        <a on:click={navigate} href="/">Home</a>
-        <a on:click={navigate} href="/about">About</a>
-        <a on:click={navigate} href="/energysources">Energy Sources</a>
-        <a on:click={navigate} href="/references">References</a>
+        <a on:click={navigate} data-sveltekit-preload-data href="/">Home</a>
+        <a on:click={navigate} data-sveltekit-preload-data href="/about">About</a>
+        <a on:click={navigate} data-sveltekit-preload-data href="/energysources">Energy Sources</a>
+        <a on:click={navigate} data-sveltekit-preload-data href="/references">References</a>
     </nav>
     <button on:click={toggleNav}>
         {#if showing}
-            X
+            <img 
+                in:fly={{y:-100}} 
+                out:fly={{y:-100}} 
+                src="images/icons/x.svg" 
+                alt=""
+            >
         {:else}
-            Open Nav
+            <img 
+                in:fly={{y:100}} 
+                out:fly={{y:100}} 
+                src="images/icons/menu-burger.svg" 
+                alt=""
+            >
         {/if}
     </button>
 </div>
@@ -49,7 +61,7 @@
 </slot>
 
 <style lang="scss">
-    a{
+    a {
         text-decoration:none;
         color:white;
         font-size: 3em;
@@ -61,12 +73,13 @@
         display: flex;
         align-items: start;
         position: fixed;
-        padding: 1em;
+        padding: 1rem;
         gap: 1em;
         top: 0;
         left: 0;
         translate: calc(-1 * var(--nav-width) - 1em) 0;
         transition: translate .5s cubic-bezier(0, 0, 0, 1);
+        z-index: 1;
         &.open {
             translate: 0;
         }
@@ -81,11 +94,35 @@
 
     button {
         color: white;
-        padding: .5rem 1rem;
-        width: fit-content;
+        padding: 1rem;
+        // width: fit-content;
+        width: calc(1em + 2rem + 2px);
+        min-width: calc(1em + 1rem + 2px);
         font-weight: 100;
         font-size: xx-large;
         font-family: inherit;
+        display: flex;
+        aspect-ratio: 1/1;
+        align-items: center;
+        cursor: pointer;
+        box-shadow: inset 0 0 0px #00ff0000;
+        transition: none .5s cubic-bezier(0, 0, 0, 1);
+        transition-property: box-shadow, scale, translate, margin-top;
+        overflow: hidden;
+        &:hover, &:focus-visible {
+            box-shadow: inset 0 0 1em #00ff0055;
+            scale: 1.1;
+        }
+        &:active {
+            box-shadow: inset 0 0 2em #00ff0055;
+            scale: 1.05;
+        }
+        img {
+            filter: invert(1);
+            position: absolute;
+            width: 1em;
+            font-size: inherit;
+        }
     }
 
     nav{
@@ -93,7 +130,7 @@
         display: flex;
         flex-direction: column;
         // gap: 5em;
-        max-width: fit-content;
+        width: fit-content;
         padding: 3em;
         font-variation-settings: "wght" 100;
         transition: box-shadow .5s cubic-bezier(0, 0, 0, 1);
@@ -117,6 +154,17 @@
         }
         
         
+    }
+
+    @media screen and (max-width: 500px) {
+        nav {
+            width: calc(100vw - 2em);
+        }
+
+        .open button {
+            margin-top: 1em;
+            translate: calc(-1 * ( 2em + 3rem + 2px )) 0;
+        }
     }
 
 </style>

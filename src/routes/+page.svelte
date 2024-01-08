@@ -29,6 +29,7 @@
         padding: 15px 30px;
         backdrop-filter: blur(5px);
         box-shadow: 0 0 10px raba(0 0 0 50%);
+        cursor: pointer;
     }
     h1{
         text-shadow: 0 0 10px raba(0 0 0 50%);
