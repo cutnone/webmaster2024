@@ -80,13 +80,41 @@
 
     <section>
         <h3>Additional Financial Bonuses</h3>
-        <p1>
+        <p>
             The IRS offers a 30% tax credit for installing these systems, which can be used to offset the costs of 
             installing these systems. You are required to fill out an IRS form in order to claim this tax credit, 
             but the government offers it to everyone who installs these systems. Certain states also have a 
             policy called net-metering in which homeowners receive compensation for sending any excess 
             electricity that they generate to the grid.
 
-        </p1>
+        </p>
     </section>
 </main>
+
+<style>
+    main{
+        
+        height:auto;
+        min-height:100dvh;
+        background-size: cover;
+        background-position: center;
+        color:white;
+        display: flex;
+        
+        flex-direction: column;
+        align-items: center;
+    }
+    p{
+        width:500px;
+    }
+    section{
+        background-image: url("images/hydroPower.png");
+        height: 100vh;
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        /* background-image: url("images/hydropower.png"); */
+    }
+
+    
+</style>
