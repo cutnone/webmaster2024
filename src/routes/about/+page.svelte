@@ -62,6 +62,7 @@
         position:relative;
         bottom:0;
         padding: 0 0 .5rem .5rem;
+        align-self: flex-start;
         text-shadow: 0px 2px 4px black;
     }
     @media screen and (max-width:500px){}

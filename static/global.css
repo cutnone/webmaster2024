@@ -16,6 +16,10 @@
     box-sizing: border-box;
     font-family: 'Open Sans', Arial, sans-serif;
 }
+
+body {
+    background-color: black;
+}
 .heading{
     font-size:5rem;
     padding-top: 3.5rem;
