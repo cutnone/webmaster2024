@@ -11,16 +11,24 @@
     <a>
         <button>View Energy Types</button>
     </a>
+    <div class="spacer"></div>
     <div id="notice">*This website was created with the Svelte framework.</div>
 </main>
 <style>
     main{
         background-image: url("images/about.jpg");
-        height:100dvh;
+        height:auto;
+        min-height:100dvh;
         background-size: cover;
+        background-position: center;
         color:white;
+        display: flex;
+        gap: 1em;
+        flex-direction: column;
+        align-items: center;
     }
     section{
+        padding: 1em;
         margin:auto;
         max-width:140ch;
         text-shadow: 0px 2px 4px black;
@@ -47,10 +55,13 @@
         display: flex;
         justify-content: center;
     }
+    .spacer {
+        flex-grow: 1;
+    }
     #notice{
-        position:absolute;
+        position:relative;
         bottom:0;
-        margin: 0 0 .5rem .5rem;
+        padding: 0 0 .5rem .5rem;
         text-shadow: 0px 2px 4px black;
     }
     @media screen and (max-width:500px){}

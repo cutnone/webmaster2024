@@ -86,7 +86,7 @@
     }
 
     nav, button {
-        background-color: #00000055;
+        background-color: #ffffff33;
         backdrop-filter: blur(10px);
         border: 1px solid #ffffffaa;
         border-radius: 1rem;
