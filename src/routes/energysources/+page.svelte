@@ -98,7 +98,7 @@
         min-height:100dvh;
         background-size: cover;
         background-position: center;
-        color:text;
+        color:white;
         display: flex;
         
         flex-direction: column;
@@ -108,7 +108,7 @@
         width:500px;
     }
     section{
-        background-image: url("images/hydroPower.png");
+        background-image: url("images/hydropower.png");
         height: 100vh;
         display:flex;
         flex-direction:column;
