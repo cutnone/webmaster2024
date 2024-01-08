@@ -93,12 +93,12 @@
 
 <style>
     main{
-        
+     
         height:auto;
         min-height:100dvh;
         background-size: cover;
         background-position: center;
-        color:white;
+        color:text;
         display: flex;
         
         flex-direction: column;
