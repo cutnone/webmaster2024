@@ -154,7 +154,7 @@
             white-space: nowrap;
             font-size: 2rem;
             text-align:center;
-            text-shadow:2px 2px 2px black;
+            text-shadow:0px 1px 2px black;
         }
 
         div{
