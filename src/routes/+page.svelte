@@ -7,7 +7,7 @@
 <main>
     <h1>Power Your Home Through Sustainable Energy</h1>
     
-    <a href="#">
+    <a href="about">
         <button>Learn More</button>
     </a>
 </main>
