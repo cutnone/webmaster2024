@@ -51,16 +51,21 @@
 	>
 		<div>
 			<h3>Solar Power</h3>
-			<p>
-				Solar panels convert sunlight into energy. This energy can be used to heat water and provide
+            <p>
+                Solar panels convert sunlight into energy. This energy can be used to heat water and provide
 				all the energy for a home depending on the amount of panels used. Solar panels are designed
 				to last and they can be grouped together in a fixed position or attached to a tracking
 				device to change the angle of the solar panels depending on the sun’s position in the sky.
 				Solar panels for households are becoming increasingly affordable. Taxpayers can claim a 30%
-				tax credit on the cost of solar systems on their income taxes. Although upfront costs can be
+				tax credit on the cost of solar systems on their income taxes.
+            </p>
+            <p>
+                Although upfront costs can be
 				relatively expensive, usage of solar power over time can save money and increase the value
 				of a home. Additionally, solar power can be used in a wide variety of biomes and climates
 				and can generate sufficient electricity even in the winter, when there is less sunlight.
+            </p>
+			<p>			
 				Solar heating can make 50% of the hot water for a family of 4 and costs between
 				$5,000-$7,000 dollars for installation. Solar panels cost $3 per watt installed.
 				Installation of a 7000 watt system would cost $21,000 but produce enough electricity to meet
@@ -79,18 +84,24 @@
 	>
 		<div>
 			<h3>Grid-connected Wind energy</h3>
-			<p>
-				Household wind energy systems that can be connected to an electricity distribution system
+            <p>
+                Household wind energy systems that can be connected to an electricity distribution system
 				are called grid-connected wind electric systems. Wind turbines work by using air resistance
 				to spin a propeller, which spins a generator to make electricity. These wind turbines are
 				used in grid-connected wind electric systems, which can be very effective in areas where
 				average annual wind speed is at least 10 miles per hour. They can also be combined with
-				solar and battery systems. The use of household wind energy systems can save money in the
+				solar and battery systems. 
+            </p>
+            <p>
+                The use of household wind energy systems can save money in the
 				long run and allow for a much smaller carbon footprint. However, owners need at least one
 				acre of land to install a windmill on their property. Despite these requirements, wind
 				systems are a great investment because with proper installation and maintenance, a home wind
 				energy system can last up to 20 years or longer. This means savings for a long amount of
-				time. Small turbines can produce around $3000-$5000 for every kilowatt of electricity
+				time.
+            </p>
+			<p>
+				 Small turbines can produce around $3000-$5000 for every kilowatt of electricity
 				produced. Most wind turbines produce around 5-15 kilowatts of energy, making costs range
 				from $15,000 to $75,000. Costs also increase as size and height of the wind turbines
 				increase.
@@ -112,10 +123,17 @@
 				Household geothermal energy units are not used to generate electricity. Instead, these
 				systems regulate the temperature in your home by harnessing the air underground. In the
 				winter, a geothermal home unit extracts the heat from this air and transfers it to your
-				house in order to increase its temperature. In the summer, the home unit cools the house by
+				house in order to increase its temperature. 
+            </p>
+            <p>
+                In the summer, the home unit cools the house by
 				moving hot air from the house underground. They have the potential to last longer and are
 				better at heating than air pump systems. This heating system is more efficient, but it costs
-				more than air heating pumps. Another problem with this system is that the equipment is
+				more than air heating pumps. 
+
+            </p>
+            <p>
+                Another problem with this system is that the equipment is
 				installed underground, which makes it harder for repairs (even though repairs are very
 				rare). Even though it costs around $24,500 on average, it is more effective for heating and
 				cooling compared to air pumps and keeps your home comfortable for less energy.
