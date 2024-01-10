@@ -17,11 +17,11 @@
 <svelte:document />
 
 <div>
-    <img bind:this={img1} src="/images/geothermal.jpg" alt="">
-    <img bind:this={img2}  src="/images/solar-cells.png" alt="">
-    <img bind:this={img3}  src="/images/wind-energy.png" alt="">
-    <img bind:this={img4}  src="/images/hydropower.png" alt="">
-    <img bind:this={img5}  src="/images/biomass.jpg" alt="">
+    <img bind:this={img1} src="images/geothermal.jpg" alt="">
+    <img bind:this={img2}  src="images/solar-cells.png" alt="">
+    <img bind:this={img3}  src="images/wind-energy.png" alt="">
+    <img bind:this={img4}  src="images/hydropower.png" alt="">
+    <img bind:this={img5}  src="images/biomass.jpg" alt="">
 </div>
 
 <style lang="scss">

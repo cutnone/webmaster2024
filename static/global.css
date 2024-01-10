@@ -3,13 +3,13 @@
     font-family: 'Open Sans';
     font-style: normal; 
     font-weight: 100 1000;
-    src: url('/fonts/OpenSans.ttf') format('TrueType');
+    src: url('fonts/OpenSans.ttf') format('TrueType');
 }
 @font-face {
     font-family: 'Open Sans';
     font-style: italic; 
     font-weight: 100 1000;
-    src: url('/fonts/OpenSans-Italic.ttf') format('TrueType');
+    src: url('fonts/OpenSans-Italic.ttf') format('TrueType');
 }
 * {
     margin: 0;
