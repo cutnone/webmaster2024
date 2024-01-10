@@ -29,12 +29,6 @@
 </script>
 
 <div class="contain" bind:this={main} class:open={showing}>
-    <nav bind:this={nav} bind:offsetWidth={navWidth}>
-        <a on:click={navigate} data-sveltekit-preload-data href="/">Home</a>
-        <a on:click={navigate} data-sveltekit-preload-data href="/about">About</a>
-        <a on:click={navigate} data-sveltekit-preload-data href="/energysources">Energy Sources</a>
-        <a on:click={navigate} data-sveltekit-preload-data href="/references">References</a>
-    </nav>
     <button on:click={toggleNav}>
         {#if showing}
             <img 
@@ -52,6 +46,12 @@
             >
         {/if}
     </button>
+    <nav bind:this={nav} bind:offsetWidth={navWidth}>
+        <a on:click={navigate} tabindex={showing ? 0 : -1} data-sveltekit-preload-data href="/">Home</a>
+        <a on:click={navigate} tabindex={showing ? 0 : -1} data-sveltekit-preload-data href="/about">About</a>
+        <a on:click={navigate} tabindex={showing ? 0 : -1} data-sveltekit-preload-data href="/energysources">Energy Sources</a>
+        <a on:click={navigate} tabindex={showing ? 0 : -1} data-sveltekit-preload-data href="/references">References</a>
+    </nav>
 </div>
 
     
@@ -71,6 +71,7 @@
 
     .contain {
         display: flex;
+        flex-direction: row-reverse;
         align-items: start;
         position: fixed;
         padding: 1rem;
@@ -82,6 +83,9 @@
         z-index: 1;
         &.open {
             translate: 0;
+        }
+        &:not(.open) {
+            height: 0;
         }
     }
 
@@ -96,6 +100,7 @@
         color: white;
         padding: 1rem;
         // width: fit-content;
+        z-index: 1;
         width: calc(1em + 2rem + 2px);
         min-width: calc(1em + 1rem + 2px);
         font-weight: 100;
@@ -134,10 +139,12 @@
         padding: 3em;
         font-variation-settings: "wght" 100;
         transition: box-shadow .5s cubic-bezier(0, 0, 0, 1);
+        overflow-x: hidden;
         a {
             line-height: 2;
             transition: none .5s cubic-bezier(0, 0, 0, 1);
             transition-property: padding, font-variation-settings;
+            white-space: nowrap;
         }
         a:hover, a:focus-visible {
             padding-left: .5ch;
@@ -159,6 +166,7 @@
     @media screen and (max-width: 500px) {
         nav {
             width: calc(100vw - 2em);
+            font-size: .7em;
         }
 
         .open button {
