@@ -263,22 +263,22 @@
 	}
 
 	section.hydro {
-		background-image: url('images/hydropower.png');
+		background-image: url('/greenhome/images/hydropower.png');
 	}
 	section.solar {
-		background-image: url('images/solar-cells.png');
+		background-image: url('/greenhome/images/solar-cells.png');
 	}
 	section.bio {
-		background-image: url('images/biomass.jpg');
+		background-image: url('/greenhome/images/biomass.jpg');
 	}
 	section.wind {
-		background-image: url('images/wind-energy.png');
+		background-image: url('/greenhome/images/wind-energy.png');
 	}
 	section.geothermal {
-		background-image: url('images/geothermal.jpg');
+		background-image: url('/greenhome/images/geothermal.jpg');
 	}
 	section.money {
-		background-image: url('images/money.jpg');
+		background-image: url('/greenhome/images/money.jpg');
 	}
 
     @media screen and (max-width: 1000px) {

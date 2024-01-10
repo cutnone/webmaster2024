@@ -34,14 +34,14 @@
             <img 
                 in:fly={{y:-100}} 
                 out:fly={{y:-100}} 
-                src="images/icons/x.svg" 
+                src="/greenhome/images/icons/x.svg" 
                 alt=""
             >
         {:else}
             <img 
                 in:fly={{y:100}} 
                 out:fly={{y:100}} 
-                src="images/icons/menu-burger.svg" 
+                src="/greenhome/images/icons/menu-burger.svg" 
                 alt=""
             >
         {/if}
