@@ -34,23 +34,23 @@
             <img 
                 in:fly={{y:-100}} 
                 out:fly={{y:-100}} 
-                src="images/icons/x.svg" 
+                src="/greenhome/images/icons/x.svg" 
                 alt=""
             >
         {:else}
             <img 
                 in:fly={{y:100}} 
                 out:fly={{y:100}} 
-                src="images/icons/menu-burger.svg" 
+                src="/greenhome/images/icons/menu-burger.svg" 
                 alt=""
             >
         {/if}
     </button>
     <nav bind:this={nav} bind:offsetWidth={navWidth}>
-        <a on:click={navigate} tabindex={showing ? 0 : -1} data-sveltekit-preload-data href="/">Home</a>
-        <a on:click={navigate} tabindex={showing ? 0 : -1} data-sveltekit-preload-data href="/about">About</a>
-        <a on:click={navigate} tabindex={showing ? 0 : -1} data-sveltekit-preload-data href="/energysources">Energy Sources</a>
-        <a on:click={navigate} tabindex={showing ? 0 : -1} data-sveltekit-preload-data href="/references">References</a>
+        <a on:click={navigate} tabindex={showing ? 0 : -1} data-sveltekit-preload-data href="/greenhome">Home</a>
+        <a on:click={navigate} tabindex={showing ? 0 : -1} data-sveltekit-preload-data href="/greenhome/about">About</a>
+        <a on:click={navigate} tabindex={showing ? 0 : -1} data-sveltekit-preload-data href="/greenhome/energysources">Energy Sources</a>
+        <a on:click={navigate} tabindex={showing ? 0 : -1} data-sveltekit-preload-data href="/greenhome/references">References</a>
     </nav>
 </div>
 

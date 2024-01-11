@@ -8,7 +8,7 @@
         <div>Why Green Energy?</div>
         <p>Installing renewable or green energy systems in homes can conserve energy, reduce the expense of utilities, and can assist in paying off taxes. Additionally, renewable energy will contribute to little or no pollution in the environment, keeping the Earth clean and preventing the worldwide issue of climate change.</p>
     </section>
-    <a href="energysources">
+    <a href="/greenhome/energysources">
         <button>View Energy Types</button>
     </a>
     <div class="spacer"></div>
@@ -16,7 +16,7 @@
 </main>
 <style>
     main{
-        background-image: url("images/about.jpg");
+        background-image: url("/greenhome/images/about.jpg");
         height:auto;
         min-height:100dvh;
         background-size: cover;
