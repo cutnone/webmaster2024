@@ -31,7 +31,7 @@
 		class:open={active === 'hydro'}
 		bind:this={hydro}
 		on:click={getActivate('hydro')}
-        on:keypress={getActivate('money')}
+        on:keypress={getActivate('hydro')}
         tabindex="0"
 	>
 		<div>
@@ -50,7 +50,7 @@
 		class:open={active === 'solar'}
 		bind:this={solar}
 		on:click={getActivate('solar')}
-        on:keypress={getActivate('money')}
+        on:keypress={getActivate('solar')}
         tabindex="0"
 	>
 		<div>
@@ -83,7 +83,7 @@
 		class:open={active === 'wind'}
 		bind:this={wind}
 		on:click={getActivate('wind')}
-        on:keypress={getActivate('money')}
+        on:keypress={getActivate('wind')}
         tabindex="0"
 	>
 		<div>
@@ -118,7 +118,7 @@
 		class:open={active === 'geothermal'}
 		bind:this={geothermal}
 		on:click={getActivate('geothermal')}
-        on:keypress={getActivate('money')}
+        on:keypress={getActivate('geothermal')}
         tabindex="0"
 	>
 		<div>
@@ -150,7 +150,7 @@
         class:open={active === 'bio'} 
         bind:this={bio} 
         on:click={getActivate('bio')}
-        on:keypress={getActivate('money')}
+        on:keypress={getActivate('bio')}
         tabindex="0"
     >
 		<div>
