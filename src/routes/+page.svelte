@@ -34,6 +34,7 @@
         outline-offset:0;
         transition: none .5s cubic-bezier(0, 0, 0, 1);
         transition-property:outline-offset, scale;
+        animation: slidein2 1.5s cubic-bezier(0, 0, 0, 1) both;
     }
     button:hover{
         outline: 3px solid #79FF8F;
@@ -50,5 +51,19 @@
         margin-top:42vh;
         color:white;
         font-family: 'Inter', sans-serif;
+        animation: slidein 1.5s cubic-bezier(0, 0, 0, 1) both;
+    }
+    @keyframes slidein{
+        from{
+            opacity:0;
+            translate:0px -100px;
+        }
+    }
+
+    @keyframes slidein2{
+        from{
+            opacity:0;
+            translate:0px 100px;
+        }
     }
 </style>

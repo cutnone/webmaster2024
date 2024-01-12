@@ -62,6 +62,7 @@
     }
     button:active {
         scale: 0.9;
+        outline-offset: 10px;
     }
     a{
         display: flex;
@@ -79,4 +80,6 @@
         text-shadow: 0px 2px 4px black;
     }
     @media screen and (max-width:500px){}
+
+    
 </style>
