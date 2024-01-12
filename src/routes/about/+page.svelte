@@ -1,5 +1,10 @@
 <script>
 </script>
+
+<svelte:head>
+    <title>About</title>
+</svelte:head>
+
 <main>
     <div class="heading">About</div>
     <section>
@@ -50,6 +55,7 @@
         background-color:rgba(255,255,255,0.25);
         padding: 15px 30px;
         backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
         box-shadow: 0 0 10px raba(0 0 0 50%);
         outline-offset:0;
         transition: none .5s cubic-bezier(0, 0, 0, 1);

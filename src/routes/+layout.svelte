@@ -28,6 +28,10 @@
     }
 </script>
 
+<svelte:head>
+    <link rel="shortcut icon" href="/greenhome/images/houseFavicon.png" type="image/x-icon">
+</svelte:head>
+
 <div class="contain" bind:this={main} class:open={showing}>
     <button on:click={toggleNav}>
         {#if showing}
@@ -92,6 +96,7 @@
     nav, button {
         background-color: #ffffff33;
         backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
         border: 1px solid #ffffffaa;
         border-radius: 1rem;
     }

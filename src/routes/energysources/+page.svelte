@@ -21,6 +21,10 @@
 	}
 </script>
 
+<svelte:head>
+    <title>Energy Sources</title>
+</svelte:head>
+
 <main>
 	<section
 		class="hydro"
@@ -224,7 +228,7 @@
 		div {
 			transition: none var(--transition);
             
-            transition-property: translate, background-color, backdrop-filter;
+            transition-property: translate, background-color, backdrop-filter, -webkit-backdrop-filter;
             padding: 2rem;
             display: flex;
 
@@ -242,6 +246,7 @@
         div {
             background-color: #000000aa;
             backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
             max-width: 100%;
         }
 	}

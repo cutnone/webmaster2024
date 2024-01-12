@@ -2,6 +2,11 @@
 	import FancyBackground from "./FancyBackground.svelte";
 
 </script>
+
+<svelte:head>
+    <title>Green Home</title>
+</svelte:head>
+
 <FancyBackground/>
 
 <main>
@@ -28,6 +33,7 @@
         background-color:rgba(255,255,255,0.25);
         padding: 15px 30px;
         backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
         box-shadow: 0 0 10px raba(0 0 0 50%);
         border:none;
         cursor: pointer;
