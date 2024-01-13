@@ -162,6 +162,14 @@
 				has absorbed. Furthermore, it's estimated that a biomass system can save up to $1100 a year
 				compared to a traditional electric heating system.
 			</p>
+
+			<p>
+				This system is better than the non-renewable burning of fossil fuels because it releases less 
+				carbon dioxide. The only drawbacks are that biomass burning units take up more space than 
+				their gas or oil equivalents, and require proper ventilation to release smoke from homes in 
+				order to make sure the air pollution stays out of homes in order to make sure the inhabitants are safe.
+
+			</p>
 		</div>
 	</section>
 
