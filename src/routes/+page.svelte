@@ -10,6 +10,7 @@
 <FancyBackground/>
 
 <main>
+    <img src='images/logo.png' alt='Green Home Logo'/>
     <h1>Power Your Home Through Sustainable Energy</h1>
     
     <a href="about">
@@ -19,6 +20,12 @@
 
 
 <style>
+    img{
+        margin-top:30px;
+        display:block;
+        margin-left:auto;
+        margin-right:auto;
+    }
     a{
         text-decoration:none;
         margin-top:50px;
@@ -54,7 +61,7 @@
         text-shadow: 0 0 10px raba(0 0 0 50%);
         font-size:50px;
         text-align:center;
-        margin-top:42vh;
+        margin-top:34vh;
         color:white;
         font-family: 'Inter', sans-serif;
         animation: slidein 1.5s cubic-bezier(0, 0, 0, 1) both;
