@@ -37,10 +37,21 @@
 		<div>
 			<h3>Hydroelectric Energy</h3>
 			<p>
-				Hydroelectric power on a smaller scale, in households and communities, allows for
-				sustainable electricity generation while avoiding the social and environmental harm that can
-				be caused by large dams. Additionally, household hydroelectric generators can utilize creeks
-				or rivers near the property to constantly generate electricity.
+				When water in streams and rivers flows downhill, it carries potential energy. Hydroelectric energy systems take this potential energy and manifest it in a usable form as 
+				kinetic energy when down-flowing water turns hydroelectric turbines, powering a generator, and creating electricity. The higher the source of water is and the more water 
+				there is, the more potential energy there is available to be converted. The viability of solar- and wind-based energy systems is susceptible to various factors, such as 
+				cloud density and wind speed, respectively. Unlike these systems, hydroelectric systems have virtually no conditional restrictions. They constantly generate electricity, 
+				24/7. 
+			</p>
+			<p>
+				Additionally, hydroelectric systems may generate more than enough electricity to power all of the appliances and lights in your home. The excess can go towards 
+				powering the heating of the house and its water. Hydroelectric power on a smaller scale, in households and communities, allows for sustainable electricity generation 
+				while avoiding the social and environmental harm that can be caused by large dams. 
+			<p>	
+				A 1 kilowatt micro hydroelectric system costs $5,000 to $22,000. The costs vary 
+				greatly because installation and construction costs can change depending on complexity of installation, the site’s conditions, as well as the prices of the parts. 
+				While these upfront costs may be discouraging, the pump produces enough electricity to offset normal electricity costs and can accumulate savings over time, with 
+				proper maintenance and supervision.
 			</p>
 		</div>
 	</section>
@@ -184,11 +195,22 @@
 		<div>
 			<h3>Additional Financial Bonuses</h3>
 			<p>
-				The IRS offers a 30% tax credit for installing these systems, which can be used to offset
-				the costs of installing these systems. You are required to fill out an IRS form in order to
-				claim this tax credit, but the government offers it to everyone who installs these systems.
-				Certain states also have a policy called net-metering in which homeowners receive
-				compensation for sending any excess electricity that they generate to the grid.
+				The IRS offers a 30% tax credit for installing these systems, which can be used to offset the costs of installing these systems. You are required to fill out an 
+				IRS form in order to claim this tax credit, but the government offers it to everyone who installs these systems.
+			</p>
+			<p>
+				Certain states also have a policy called net-metering in which homeowners receive compensation for sending any excess electricity that they generate to the grid. 
+				During the day, most customers of home energy systems produce more energy than they consume. Net metering can take advantage of this excess to minimize their 
+				electricity bills while simultaneously powering the grid and providing energy for other homes. Not only do homeowners get to sell excess energy through net metering, 
+				they can redeem it in the future if their home energy systems do not generate enough. For example, a homeowner that generates excess energy in October can sell it and 
+				receive a credit, which they can redeem in November if they don’t generate enough energy and need to take more from the grid. The credit they use pays for the supplemental 
+				energy they need from the grid.
+			</p>
+			<p>
+				In addition to the federal tax credit offered by the IRS, many states also offer a state tax credit (like South Carolina’s additional 25%). 
+				Homeowners can also benefit from performance based incentives, or PBIs, such as solar renewable energy certificates, where owners can earnable a 
+				tradable certificate/credit, which can be sold for money. Utility companies then buy these tax credits to meet renewable energy mandates. These 
+				credits are only available in a few states.
 			</p>
 		</div>
 	</section>
