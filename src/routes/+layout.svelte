@@ -170,7 +170,7 @@
 
     @media screen and (max-width: 500px) {
         nav {
-            width: calc(100vw - 2em);
+            width: calc(100vw - 2rem);
             font-size: .7em;
         }
 
