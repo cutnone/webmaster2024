@@ -3,7 +3,7 @@
     <div class="links">
         <a href='https://drive.google.com/file/d/10TSb0k6usfNuVKh6vaGY0995CvSkVSmu/view' target="_blank">Plan of Work Log</a>
         <a href='https://drive.google.com/file/d/1jaczqEYQXldnjsO0W2VYUEM1UcjHE5OM/view' target="_blank">Works Cited</a>
-        <a href="https://drive.google.com/file/d/10d9vn5WhBLb3XQ01wlvZCCCNtkOacCRc/view">Copyright Checklist</a>
+        <a href="https://drive.google.com/file/d/10d9vn5WhBLb3XQ01wlvZCCCNtkOacCRc/view" target="_blank">Copyright Checklist</a>
     </div>
 </main>
 
