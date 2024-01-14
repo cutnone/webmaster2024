@@ -2,7 +2,7 @@
     <h1>References</h1>
     <div class="links">
         <a href='https://drive.google.com/file/d/1KU-nE0jrawxqkuOXUnwKEZezH2jyuHgx/view' target="_blank">Plan of Work Log</a>
-        <a href='https://drive.google.com/file/d/1F-q-5dDDGP3uel-kC8htiAVl3SUOypXZ/view' target="_blank">Works Cited</a>
+        <a href='https://drive.google.com/file/d/1-m8tkB0U65hEbZnbovEJEqNcnfsWBTd2/view' target="_blank">Works Cited</a>
         <a href="">Copyright Checklist</a>
     </div>
 </main>
