@@ -10,7 +10,7 @@
 <FancyBackground/>
 
 <main>
-    <img src='images/logo.png' alt='Green Home Logo'/>
+    <img src='images/logo.png' alt='Green Home Logo' class="responsive"/>
     <h1>Power Your Home Through Sustainable Energy</h1>
     
     <a href="about">
@@ -20,6 +20,10 @@
 
 
 <style>
+    .responsive {
+        max-width: 100%;
+        height: auto;
+        }
     img{
         margin-top:30px;
         display:block;
