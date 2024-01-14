@@ -14,8 +14,11 @@
         display: grid;
         place-items: center;
         /* background-color: #005500; */
-        padding: 1em 2em;
+        padding-bottom: 2px;
         background-size: 50%;
+        border-bottom: 1px solid #ffffff;
+        transition: none .5s cubic-bezier(0, 0, 0, 1);
+        transition-property: border, padding;
     }
 
     h1 {
@@ -23,7 +26,12 @@
     }
 
     a:hover{
-        text-decoration:underline;
+        border-bottom: 1px solid white;
+        padding-bottom: .8em;
+    }
+
+    a:active {
+        padding-bottom: .4em;
     }
 
     .links {
@@ -40,8 +48,7 @@
         align-items: center;
         gap: 3em;
         flex-direction: column;
-        background-image: radial-gradient(circle at center, #005500 0%,black 100%);
-
+        background-image: url("/greenhome/images/leaves.jpg");
     }
 
     @media screen and (max-width: 700px) {

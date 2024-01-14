@@ -63,7 +63,6 @@
         text-align:center;
         margin-top:34vh;
         color:white;
-        font-family: 'Inter', sans-serif;
         animation: slidein 1.5s cubic-bezier(0, 0, 0, 1) both;
     }
     @keyframes slidein{
