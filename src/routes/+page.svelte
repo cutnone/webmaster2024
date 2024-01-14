@@ -10,25 +10,35 @@
 <FancyBackground/>
 
 <main>
-    <img src='images/logo.png' alt='Green Home Logo' class="responsive"/>
-    <h1>Power Your Home Through Sustainable Energy</h1>
-    
-    <a href="about">
-        <button>Learn More</button>
-    </a>
+    <div class="responsive">
+        <img src='images/logo.png' alt='Green Home Logo' />
+    </div>
+    <div class="center">
+        <h1>Power Your Home Through Sustainable Energy</h1>
+        
+        <a href="about">
+            <button>Learn More</button>
+        </a>  
+    </div>
 </main>
 
 
 <style>
     .responsive {
-        max-width: 100%;
-        height: auto;
+        width:100%;
+        text-align:center;
+        position:absolute;
+        margin-top:1rem;
         }
     img{
-        margin-top:30px;
-        display:block;
-        margin-left:auto;
-        margin-right:auto;
+        max-width:100%;
+    }
+    .center{
+        display:flex;
+        flex-direction:column;
+        justify-content: center;
+        align-items: center;
+        height:100dvh;
     }
     a{
         text-decoration:none;
@@ -52,6 +62,8 @@
         transition: none .5s cubic-bezier(0, 0, 0, 1);
         transition-property:outline-offset, scale;
         animation: slidein2 1.5s cubic-bezier(0, 0, 0, 1) both;
+        display:flex;
+        justify-content:center;
     }
     button:hover{
         outline: 3px solid #79FF8F;
@@ -59,13 +71,16 @@
         cursor:pointer;
     }
     button:active {
+        
         scale: 0.9;
     }
     h1{
+        display:flex;
+        justify-content:center;
         text-shadow: 0 0 10px raba(0 0 0 50%);
         font-size:50px;
         text-align:center;
-        margin-top:34vh;
+        
         color:white;
         animation: slidein 1.5s cubic-bezier(0, 0, 0, 1) both;
     }
@@ -81,5 +96,12 @@
             opacity:0;
             translate:0px 100px;
         }
+    }
+
+    @media (max-width:600px){
+       .responsive{
+        padding-left: 6rem;
+        padding-right: 1rem;
+       }
     }
 </style>
