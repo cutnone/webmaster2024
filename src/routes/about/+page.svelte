@@ -20,18 +20,18 @@
     <div id="notice">*This website was created with the Svelte framework.</div>
 </main>
 <style>
-    main{
-        background-image: url("/greenhome/images/about.jpg");
-        height:auto;
-        min-height:100dvh;
-        background-size: cover;
-        background-position: center;
-        color:white;
-        display: flex;
-        gap: 1em;
-        flex-direction: column;
-        align-items: center;
-    }
+	main {
+		background-image: url('/greenhome/images/about.jpg');
+		height: auto;
+		min-height: 100dvh;
+		background-size: cover;
+		background-position: center;
+		color: white;
+		display: flex;
+		gap: 1em;
+		flex-direction: column;
+		align-items: center;
+	}
     section{
         padding: 1em;
         margin:auto;

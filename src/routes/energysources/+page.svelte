@@ -98,7 +98,7 @@
         tabindex="0"
 	>
 		<div>
-			<h3>Grid-connected Wind energy</h3>
+			<h3>Grid-connected Wind Energy</h3>
             <p>
                 Household wind energy systems that can be connected to an electricity distribution system
 				are called grid-connected wind electric systems. Wind turbines work by using air resistance
