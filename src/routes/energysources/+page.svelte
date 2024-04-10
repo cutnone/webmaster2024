@@ -65,7 +65,7 @@
         tabindex="0"
 	>
 		<div>
-			<h3>Solar Power</h3>
+			<h3>Solar Energy</h3>
             <p>
                 Solar panels convert sunlight into energy. This energy can be used to heat water and provide
 				all the energy for a home depending on the amount of panels used. Solar panels are designed
@@ -98,7 +98,7 @@
         tabindex="0"
 	>
 		<div>
-			<h3>Grid-connected Wind Energy</h3>
+			<h3>Wind Energy</h3>
             <p>
                 Household wind energy systems that can be connected to an electricity distribution system
 				are called grid-connected wind electric systems. Wind turbines work by using air resistance
@@ -165,7 +165,7 @@
         tabindex="0"
     >
 		<div>
-			<h3>Biomass</h3>
+			<h3>Biomass Energy</h3>
 			<p>
 				Biomass heating systems burn organic materials, such as wood pellets, chips, or logs to
 				provide heating for homes and water. Compared to fossil fuels like coal and oil, this system
