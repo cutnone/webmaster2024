@@ -310,6 +310,11 @@
 				background-color: rgba(0, 0, 0, 0.3);
 			}
 		}
+		&:active {
+			div.wrapper {
+				background-color: rgba(0, 0, 0, 0.5);
+			}
+		}
 		div.container {
 			translate: 0 calc(50% - 1em - 3rem);
 		}

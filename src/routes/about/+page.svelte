@@ -62,6 +62,11 @@
                 <li>and dangerous storms have destroyed millions of acres of property and ecosystems</li>
             </ul>
             <p>These are only a few examples of the devastating environmental damage caused by fossil fuels and climate change.</p>
+            <div class="cta">
+                <a href="/greenhome/energysources">
+                    <button>View Energy Types</button>
+                </a>
+            </div>
             <h2>What are the Benefits of Green Energy?</h2>
             <p>Installing renewable or green energy systems in homes can: </p>
             <ul>
@@ -70,13 +75,12 @@
                 <li>Assist in paying off taxes</li>
             </ul>
             <p>Additionally, using renewable forms of energy helps combat climate change. These systems reduce pollution by minimizing reliance on fossil fuels and further preventing the atmosphere’s exposure to greenhouse gas emissions.</p>
-        
+            <div class="cta">
+                <a href="/greenhome/financialbonuses">
+                    <button>View Financial Bonuses</button>
+                </a>
+            </div>
         </section>
-        <div class="cta">
-            <a href="/greenhome/energysources">
-                <button>View Energy Types</button>
-            </a>
-        </div>
         <div class="spacer"></div>
         <div id="notice">* This website was created with the Svelte framework and Motion One library.</div>
     </article>
@@ -108,6 +112,7 @@
     }
     article {
         width: 100%;
+        padding-bottom: 10em;
     }
     section div{
         font-size:2.4rem;
@@ -124,7 +129,7 @@
         // border-bottom: 3px solid #79FF8F;
     }
     .cta {
-        padding: 6em 0 9em 0;
+        padding: 1em 0 1em 0;
         display: grid;
         place-items: center;
     }
