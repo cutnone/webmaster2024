@@ -19,12 +19,10 @@
     const SLIDE_DUR = 2;
 
     afterNavigate((e)=>{
-        console.log(e.from);
-        
-        if (!e.from?.url) {
+        if (!e.from) return;
+        if (!e.from.url) {
             runAnim();
-        }
-        else {
+        } else {
             animate([img1, img2, img3, img4, img5], {
                 filter: ["brightness(1)", "brightness(0.5)"],
             }, {
@@ -140,6 +138,8 @@
         
 
         await wait(SLIDE_DUR/2*1000);
+        console.log("ed");
+        
         DP("ready");
         await animate([img1, img2, img3, img4, img5], {
             filter: ["brightness(1)", "brightness(0.5)"],
