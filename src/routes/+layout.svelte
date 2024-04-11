@@ -4,7 +4,9 @@
     let showing = false;
     let navWidth = 0;
     let main: HTMLDivElement
-    let nav: HTMLElement
+    let nav: HTMLElement;
+
+    export let visible = true;
     $: if (main) {
         main.style.setProperty("--nav-width", navWidth+"px")
     }
@@ -31,8 +33,17 @@
 <svelte:head>
     <link rel="shortcut icon" href="/greenhome/images/houseFavicon.png" type="image/x-icon">
 </svelte:head>
-
-<div class="contain" bind:this={main} class:open={showing}>
+<a class:invisible={!visible} href="/greenhome" class="home">
+    <img src="/greenhome/images/houseFavicon.png" alt="">
+</a>
+<div class:invisible={!visible} class="contain" bind:this={main} class:open={showing}>
+    <nav bind:this={nav} bind:offsetWidth={navWidth}>
+        <a on:click={navigate} tabindex={showing ? 0 : -1} data-sveltekit-preload-data href="/greenhome">Home</a>
+        <a on:click={navigate} tabindex={showing ? 0 : -1} data-sveltekit-preload-data href="/greenhome/about">About</a>
+        <a on:click={navigate} tabindex={showing ? 0 : -1} data-sveltekit-preload-data href="/greenhome/energysources">Energy Sources</a>
+        <a on:click={navigate} tabindex={showing ? 0 : -1} data-sveltekit-preload-data href="/greenhome/financialbonuses">Financial Bonuses</a>
+        <a on:click={navigate} tabindex={showing ? 0 : -1} data-sveltekit-preload-data href="/greenhome/references">References</a>
+    </nav>
     <button on:click={toggleNav}>
         {#if showing}
             <img 
@@ -50,13 +61,7 @@
             >
         {/if}
     </button>
-    <nav bind:this={nav} bind:offsetWidth={navWidth}>
-        <a on:click={navigate} tabindex={showing ? 0 : -1} data-sveltekit-preload-data href="/greenhome">Home</a>
-        <a on:click={navigate} tabindex={showing ? 0 : -1} data-sveltekit-preload-data href="/greenhome/about">About</a>
-        <a on:click={navigate} tabindex={showing ? 0 : -1} data-sveltekit-preload-data href="/greenhome/energysources">Energy Sources</a>
-        <a on:click={navigate} tabindex={showing ? 0 : -1} data-sveltekit-preload-data href="/greenhome/financialbonuses">Financial Bonuses</a>
-        <a on:click={navigate} tabindex={showing ? 0 : -1} data-sveltekit-preload-data href="/greenhome/references">References</a>
-    </nav>
+    
 </div>
 
     
@@ -66,12 +71,31 @@
 </slot>
 
 <style lang="scss">
-    a {
+    nav a {
         text-decoration:none;
         color:white;
         font-size: 3em;
         font-weight: 100;
+        text-align: right;
+    }
 
+    .invisible {
+        opacity: 0;
+    }
+
+    .home {
+        position: fixed;
+        inset: 0;
+        padding: 1rem 0 0 1rem;
+        width: fit-content;
+        height: fit-content;
+        filter: drop-shadow(0 0 .4rem rgba(0, 0, 0, 1));
+        transition: opacity .5s cubic-bezier(0, 0, 0, 1);
+        img {
+            aspect-ratio: 1 / 1;
+            width: 4em;
+        }
+        z-index: 1;
     }
 
     .contain {
@@ -82,9 +106,10 @@
         padding: 1rem;
         gap: 1em;
         top: 0;
-        left: 0;
-        translate: calc(-1 * var(--nav-width) - 1em) 0;
-        transition: translate .5s cubic-bezier(0, 0, 0, 1);
+        right: 0;
+        translate: calc(var(--nav-width) + 1em) 0;
+        transition: none .5s cubic-bezier(0, 0, 0, 1);
+        transition-property: opacity, translate;
         z-index: 1;
         &.open {
             translate: 0;
@@ -146,6 +171,7 @@
         font-variation-settings: "wght" 100;
         transition: box-shadow .5s cubic-bezier(0, 0, 0, 1);
         overflow-x: hidden;
+        text-align: right;
         a {
             line-height: 2;
             transition: none .5s cubic-bezier(0, 0, 0, 1);
@@ -153,12 +179,12 @@
             white-space: nowrap;
         }
         a:hover, a:focus-visible {
-            padding-left: .5ch;
+            padding-right: .5ch;
             font-variation-settings: "wght" 700;
         }
         a:active:hover {
             font-variation-settings: "wght" 300;
-            padding-left: .6ch;
+            padding-right: .6ch;
             
         }
         box-shadow: inset 0 0 0px #00ff0000, 0 0 0em #00ff0000;
@@ -179,7 +205,7 @@
 
         .open button {
             margin-top: 1em;
-            translate: calc(-1 * ( 2em + 3rem + 2px )) 0;
+            translate: calc(( 2em + 3rem + 2px )) 0;
         }
     }
 

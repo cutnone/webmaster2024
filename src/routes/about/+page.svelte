@@ -45,8 +45,9 @@
         <h1 bind:this={bigTitle}>About</h1>
     </div>
     <article bind:this={article}>
-        <div class="title-container">
-            <h1 class="main-title" bind:this={title}>About</h1>
+        <div class="title-container" bind:this={title}>
+            <h1 class="main-title">About</h1>
+            <p>Scroll to Read</p>
         </div>
         <section>
             <h2>What is Green Home?</h2>
@@ -77,7 +78,7 @@
             <p>
                 Additionally, using renewable forms of energy helps combat climate change. 
                 These systems reduce pollution by minimizing reliance on fossil fuels and further preventing the atmosphere’s exposure to greenhouse gas emissions.
-                Using green energy also incurs nifty financial bonuses.
+                Using green energy also incurs allows homeowners to collect financial bonuses.
             </p>
             <div class="cta">
                 <a href="/greenhome/financialbonuses">
@@ -106,8 +107,15 @@
 	}
     .title-container {
         height: 100dvh;
-        display: grid;
-        place-items: center;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        p {
+            padding: 1em 1.5em;
+            background-color: rgb(0,0,0,.4);
+            border-radius: 20px;
+        }
     }
     section{
         padding: 1em;
@@ -128,7 +136,7 @@
         text-shadow: 0 0 .2em rgba(0,0,0,0.43);
         text-align: center;
         margin-top: 0;
-        margin-bottom: 1rem;
+        margin-bottom: 0;
         // border-bottom: 3px solid #79FF8F;
     }
     .cta {

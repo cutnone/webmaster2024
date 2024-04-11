@@ -45,8 +45,9 @@
         <h1 bind:this={bigTitle}>Financial Bonuses</h1>
     </div>
     <article bind:this={article}>
-        <div class="title-container">
-            <h1 class="main-title" bind:this={title}>Financial Bonuses</h1>
+        <div class="title-container" bind:this={title}>
+            <h1 class="main-title">Financial Bonuses</h1>
+            <p>Scroll to Read</p>
         </div>
         <section>
             <p class="large">
@@ -99,8 +100,16 @@
 	}
     .title-container {
         height: 100dvh;
-        display: grid;
-        place-items: center;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+
+        p {
+            padding: 1em 1.5em;
+            background-color: rgb(0,0,0,.4);
+            border-radius: 20px;
+        }
     }
     section{
         padding: 1em;

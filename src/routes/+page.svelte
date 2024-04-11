@@ -130,9 +130,8 @@
 
 
     @media (max-width:650px){
-       .responsive{
-        padding-left: 6rem;
-        padding-right: 1rem;
-       }
+        .responsive{
+            visibility: hidden;
+        }
     }
 </style>
