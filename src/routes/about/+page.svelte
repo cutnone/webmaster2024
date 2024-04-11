@@ -74,7 +74,11 @@
                 <li>Reduce the expense of home utilities</li>
                 <li>Assist in paying off taxes</li>
             </ul>
-            <p>Additionally, using renewable forms of energy helps combat climate change. These systems reduce pollution by minimizing reliance on fossil fuels and further preventing the atmosphere’s exposure to greenhouse gas emissions.</p>
+            <p>
+                Additionally, using renewable forms of energy helps combat climate change. 
+                These systems reduce pollution by minimizing reliance on fossil fuels and further preventing the atmosphere’s exposure to greenhouse gas emissions.
+                Using green energy also incurs nifty financial bonuses.
+            </p>
             <div class="cta">
                 <a href="/greenhome/financialbonuses">
                     <button>View Financial Bonuses</button>
