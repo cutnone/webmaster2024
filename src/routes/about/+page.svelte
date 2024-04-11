@@ -112,7 +112,6 @@
     }
     article {
         width: 100%;
-        padding-bottom: 10em;
     }
     section div{
         font-size:2.4rem;
@@ -194,14 +193,14 @@
         text-decoration:none;
     }
     .spacer {
-        flex-grow: 1;
+        padding-bottom: 10em;
     }
     #notice{
         position:relative;
         bottom:0;
         padding: 0 0 .5rem .5rem;
         align-self: flex-start;
-        text-shadow: 0px 2px 4px black;
+        // text-shadow: 0px 2px 4px black;
         opacity: .5;
     }
 
