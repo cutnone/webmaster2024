@@ -53,7 +53,7 @@
                 duration: 0,
             });
         }
-        Promise.any([Promise.allSettled([img1, img2, img3, img4, img5].map((v)=>{
+        await Promise.any([Promise.allSettled([img1, img2, img3, img4, img5].map((v)=>{
             return new Promise((res)=>{
                 v.onload = res;
             })
