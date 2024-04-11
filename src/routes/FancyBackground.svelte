@@ -53,11 +53,11 @@
                 duration: 0,
             });
         }
-        await Promise.allSettled([img1, img2, img3, img4, img5].map((v)=>{
+        Promise.any([Promise.allSettled([img1, img2, img3, img4, img5].map((v)=>{
             return new Promise((res)=>{
                 v.onload = res;
             })
-        }))
+        })), wait(2000)]);
         await wait(1000);
         await animate([img1, img2, img3, img4, img5], {
             opacity: 1,
