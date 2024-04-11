@@ -12,12 +12,12 @@
     src: url('fonts/OpenSans-Italic.ttf') format('TrueType');
 }
 * {
-    margin: 0;
     box-sizing: border-box;
     font-family: 'Open Sans', Arial, sans-serif;
 }
 
 body {
+    margin: 0;
     background-color: black;
 }
 .heading{

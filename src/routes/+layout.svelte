@@ -54,6 +54,7 @@
         <a on:click={navigate} tabindex={showing ? 0 : -1} data-sveltekit-preload-data href="/greenhome">Home</a>
         <a on:click={navigate} tabindex={showing ? 0 : -1} data-sveltekit-preload-data href="/greenhome/about">About</a>
         <a on:click={navigate} tabindex={showing ? 0 : -1} data-sveltekit-preload-data href="/greenhome/energysources">Energy Sources</a>
+        <a on:click={navigate} tabindex={showing ? 0 : -1} data-sveltekit-preload-data href="/greenhome/financialbonuses">Financial Bonuses</a>
         <a on:click={navigate} tabindex={showing ? 0 : -1} data-sveltekit-preload-data href="/greenhome/references">References</a>
     </nav>
 </div>
@@ -95,7 +96,7 @@
 
     nav, button {
         background-color: #ffffff33;
-        backdrop-filter: blur(10px);
+        backdrop-filter: blur(10px) brightness(0.5);
         -webkit-backdrop-filter: blur(10px);
         border: 1px solid #ffffffaa;
         border-radius: 1rem;
@@ -168,10 +169,12 @@
         
     }
 
-    @media screen and (max-width: 500px) {
+    @media screen and (max-width: 590px) {
         nav {
             width: calc(100vw - 2rem);
-            font-size: .7em;
+            height: calc(100dvh - 2rem);
+            font-size: min(3dvw, 1em);
+            justify-content: space-evenly;
         }
 
         .open button {
